@@ -1,12 +1,4 @@
-# 🎲 JUEGO DE AMIGOS
-
-Creamos un pequeño juego de interacción donde el usuario carga todos los nombres de sus amigos y el sistema elige uno al azar.
-
-Tenemos una estructura básica de HTML con botones e inputs donde se ingresan los nombres. Luego tenemos las funciones en JAVASCRIPT descriptas más abajo.
-
-### Funcionalidad JavaScript
-
-```javascript
+// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = []
 
 function agregarAmigo(){
@@ -23,13 +15,8 @@ alert("Por favor, inserte un nombre.")
  }
   
  mostrarAmigos()
-}
-```
-En este fragmento de codigo declaramos el array que contiene los nombre de tus amigos. 
+}   
 
-Luego creamos la funcion que detetctara si se agrego texto subirlo alm array en el caso que no se escriba nada que arroja un mensaje que agregue un nombre valido.
-
-```
 function mostrarAmigos() {
   // 1. Obtener el elemento <ul>
   let listaAmigos = document.getElementById("listaAmigos");
@@ -42,12 +29,7 @@ function mostrarAmigos() {
     listaAmigos.innerHTML += `<li>${amigo}</li>`;
   }
 }
-```
-Luego tenemos esta funcion que muestra en forma de listado los nombre agregados en el array
 
-y por ultimo tenemos esta funcion que hace el sorteo, tomando el indice del array y asi eligiendo el nombre en esa posicion
-
-```
 function sortearAmigo() {
   
   let resultadoElemento = document.getElementById("resultado");
@@ -69,4 +51,3 @@ function sortearAmigo() {
 
   console.log("El amigo sorteado es:", amigoSorteado);
 }
-```
